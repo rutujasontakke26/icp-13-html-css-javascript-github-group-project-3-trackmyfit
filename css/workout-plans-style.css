@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F9FAFB;
+}
+.nav-bar {
+  background-color: #2563EB;
+  padding: 30px 50px;
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.nav-bar a:hover {
+  color: #FFD700;
+}
