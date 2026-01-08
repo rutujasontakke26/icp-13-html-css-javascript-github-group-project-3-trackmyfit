@@ -32,7 +32,20 @@
 
     <div id="result"></div>
 </div>
-    <footer class="footer">
+<script>
+function calculateBMI(){
+    let h = document.getElementById("height").value;
+    let w = document.getElementById("weight").value;
+
+    let heightMeter = h / 100;
+    let bmi = w / (heightMeter * heightMeter);
+
+    document.getElementById("result").innerHTML =
+    "Your BMI is " + bmi.toFixed(2);
+}
+</script>
+
+  <footer class="footer">
     <p>2026 TrackMyFit | All Rights Reserved</p>
     <p>
       <a href="index.html">Home</a> |
