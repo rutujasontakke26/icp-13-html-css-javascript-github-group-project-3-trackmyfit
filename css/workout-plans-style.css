@@ -6,18 +6,19 @@
   .nav-bar {
     background-color: #2563EB;
     padding: 45px 30px;
-    position: sticky;
+    position: relative; 
     top: 0;
     align-items: center;
   }
   .nav-bar ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 10px 20px;
-    justify-content: space-between;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px 20px;
+  justify-content: space-between;
   }
+
   .nav-bar a {
     text-decoration: none;
     color: white;
@@ -28,16 +29,62 @@
   .nav-bar a:hover {
     color: #FFD700;
   }
-  
-    .workout-plans{
-    margin-top: 50px;
-    background: #10B981;
-    color: white;
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 0px 0px;
-    box-shadow: 0 4px 15px #0000001a;
+  .hamburger {
+  display: none;
+  cursor: pointer;
+  }
+
+  .hamburger img {
+    width: 22px;
+    height: 22px;
     }
+    @media (max-width: 768px) {
+
+    nav {
+    position: relative;
+    }
+
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      }
+      .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: #2563EB;
+      flex-direction: column;
+      width: 220px;
+      padding: 15px;
+      border-radius: 10px;
+      }  
+      .nav-links li {
+      margin: 10px 0;
+      }
+      .nav-links a {
+       color: white;
+       font-size: 16px;
+      }
+      nav:hover .nav-links {
+      display: flex;
+      }
+    }
+
+      .workout-plans{
+      margin-top: 50px;
+      background: #10B981;
+      color: white;
+      text-align: center;
+      padding: 10px 10px;
+      border-radius: 0px 0px;
+      box-shadow: 0 4px 15px #0000001a;
+      }
       .card-container {
       max-width: 1100px;
       margin: 40px auto;
@@ -111,5 +158,28 @@
 
   .footer a:hover {
     color:#FFD700 ;
+  }
+
+  .theme-toggle{
+   width: 100px;
+   border: 1px solid black;
+   border-radius: 50px;
+   padding: 2px 10px;
+   cursor: pointer;
+   position: fixed;
+   top: 10px;
+   right: 10px;
+  }
+
+  .theme-toggle-light{
+    border: 1px solid orange;
+  }
+
+  .theme-toggle-dark{
+  border: 1px solid #fff;
+  background-color: #000;
+  }
+  .ico-dark{
+  visibility: hidden;
   }
 
