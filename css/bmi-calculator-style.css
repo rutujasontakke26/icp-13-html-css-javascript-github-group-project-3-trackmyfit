@@ -75,6 +75,60 @@
       display: flex;
       }
     }
+    .container{
+    max-width: 350px;
+    background-color: #fff;
+    margin: 80px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align: center;
+    color: #185a9d;
+}
+
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background-color: #43cea2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #36b18c;
+}
+
+
+#result{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 480px){
+    .card{
+        margin: 40px 15px;
+    }
+}
     .footer {
       text-align: center;
       padding: 10px;
