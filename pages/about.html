@@ -7,111 +7,221 @@
     body {
       margin: 0;
       font-family: Arial;
-      background-color: #A7AAE1;
+      background-color: #F1F6F9;
+      transition: 0.3s;
+    }
+
+   
+    .nav-bar {
+      background-color: #212A3E;
+      padding: 20px 30px;
+      position: sticky;
+      top: 0;
+    }
+
+    .nav-bar ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+   
+    .theme-btn {
+      background-color: white;
+      color: #212A3E;
+      border: none;
+      padding: 7px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
     }
 
     
     .header {
-      background-color: #696FC7;
+      background-color: #394867;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
     }
 
     
     .container {
-      background-color: #F5D3C4;
+      background-color: #9BA4B5;
       width: 80%;
-      margin: 20px auto;
-      padding: 20px;
+      margin: 30px auto;
+      padding: 25px;
       border-radius: 10px;
+      text-align: center;
     }
 
     h2 {
-      color: #696FC7;
-    }
-
-    p {
-      line-height: 1.5;
-    }
-
-    
-    .features {
-      margin-top: 15px;
+      color: #212A3E;
     }
 
     .feature-box {
-      background-color: #F2AEBB;
+      background-color: #F1F6F9;
       padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 8px;
+      margin: 10px 0;
+      border-radius: 6px;
     }
 
    
-    button {
-      background-color: #696FC7;
+    .fitness-footer {
+      background-color: #394867;
       color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 20px;
-      cursor: pointer;
+      padding: 30px 20px;
     }
 
-    button:hover {
-      background-color: #A7AAE1;
-    }
-
-    .footer {
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
       text-align: center;
-      padding: 10px;
-      background-color: #696FC7;
+    }
+
+    .footer-box {
+      width: 30%;
+    }
+
+    .footer-end {
+      text-align: center;
+      border-top: 1px solid #9BA4B5;
+      margin-top: 15px;
+      padding-top: 10px;
+      font-size: 14px;
+    }
+
+    body.dark {
+      background-color: #1B262C;
       color: white;
-      margin-top: 20px;
+    }
+
+    body.dark .container {
+      background-color: #9BA4B5;
+      color: black;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="header">
-    <h1>Track My Fit</h1>
-    <p>Your Fitness Tracking Website</p>
-  </div>
 
-  <div class="container">
-    <h2>About Us</h2>
-    <p>
-      Track My Fit is a simple fitness tracking application created to help users
-      track their daily activities and improve their health. This website is designed
-      for beginners who want to start their fitness journey.
-    </p>
+<div class="nav-bar">
+  <ul>
+    <li>
+      <a href="#">Home</a>
+      <a href="#">BMI</a>
+      <a href="#">BMR</a>
+      <a href="#">Workouts</a>
+    </li>
+    <li>
+      <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">🌙 Dark</button>
+    </li>
+  </ul>
+</div>
 
-    <h2>Our Mission</h2>
-    <p>
-      Our mission is to encourage people to stay active and healthy by providing
-      an easy-to-use fitness tracking platform.
-    </p>
+<div class="header">
+  <h1>Track My Fit</h1>
+  <p>Your Fitness Tracking Website</p>
+</div>
 
-    <h2>Features</h2>
-    <div class="features">
-      <div class="feature-box">🏃 Track daily steps</div>
-      <div class="feature-box">🔥 Monitor calories</div>
-      <div class="feature-box">🎯 Set fitness goals</div>
-      <div class="feature-box">🔒 Secure Data</div>
+
+<div class="container">
+  <h2>About Us</h2>
+  <p>
+    Track My Fit is a beginner-friendly fitness tracking website designed to
+    help users understand their health better. Our platform focuses on
+    simplicity, clarity, and ease of use so that anyone can start their fitness
+    journey without confusion.
+  </p>
+  <p>
+    Whether you are a student, working professional, or fitness enthusiast,
+    Track My Fit provides essential tools to track health data and stay motivated.
+  </p>
+
+  <h2>Our Mission</h2>
+  <p>
+    Our mission is to promote a healthy lifestyle by offering simple fitness
+    calculators and workout planning tools. We believe fitness should be
+    accessible to everyone, regardless of experience level.
+  </p>
+  <p>
+    Track My Fit encourages consistency, awareness, and self-improvement
+    through small daily actions that lead to long-term health benefits.
+  </p>
+
+  <h2>Features</h2>
+  <div class="feature-box">🏃 Fitness Tracking</div>
+  <div class="feature-box">🔥 BMI & BMR Calculators</div>
+  <div class="feature-box">🎯 Workout Goals</div>
+</div>
+
+<footer class="fitness-footer">
+
+  <div class="footer-container">
+
+    
+    <div class="footer-box">
+      <h2>🏋️ Track My Fit</h2>
+      <p>
+        Track My Fit helps you monitor your fitness activities,
+        calculate BMI & BMR, and stay consistent with your health goals.
+      </p>
     </div>
 
-    <button onclick="showMessage()">Start Your Journey</button>
+   
+    <div class="footer-box">
+      <h3>Useful Pages</h3>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="bmi-calculator.html">⚖️ BMI Calculator</a></li>
+        <li><a href="bmr-calculator.html">🔥 BMR Calculator</a></li>
+        <li><a href="workout-plans.html">🏃Workout Plans</a></li>
+      </ul>
+    </div>
+
+   
+    <div class="footer-box">
+      <h3>📞 Support</h3>
+      <p>📧 support@trackmyfit.com</p>
+      <p>📱 +91 98416 59456</p>
+      <p>📍 India</p>
+      
+    </div>
+
   </div>
 
-  <div class="footer">
-     Track My Fit
+  <div class="footer-end">
+    © 2026 TrackMyFit • Stay Fit, Stay Healthy
   </div>
 
-  <script>
-    function showMessage() {
-      alert("Welcome to Track My Fit! Stay fit and healthy 💪");
+</footer>
+
+
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+
+    var btn = document.getElementById("themeBtn");
+
+    if (document.body.classList.contains("dark")) {
+      btn.innerHTML = "☀️ Light";
+    } else {
+      btn.innerHTML = "🌙 Dark";
     }
-  </script>
+  }
+</script>
 
 </body>
 </html>
