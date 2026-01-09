@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Calculator</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Calories Calculator</title>
+   <link rel="stylesheet" href="../css/calories_calculator.css">
+</head>
+<body>
+
+    <div class="nav-bar">
+    <nav>
+        <ul>
+        <li><a href="/index.html"><b>Home</b></a></li>
+        <li><a href="/pages/bmi-calculator.html"><b>BMI Calculator</b></a></li>
+        <li><a href="/pages/bmr-calculator.html"><b>BMR Calculator</b></a></li>
+        <li><a href="/pages/workout-plans.html"><b>Workout Plans</b></a></li>
+        <li><a href="/pages/nutrition-and-diet.html"><b>Nutrition and Diet</b></a></li>
+        <li><a href="/pages/calories-calculator.html"><b>Calories Calculator</b></a></li>
+        <li><a href="/pages/workout-to-do-list.html"><b>Workout To-do List</b></a></li>
+        </ul>
+    </nav>
+    </div>
+<div class="container">
+    <h3 class="heading">Calories Calculator</h3>
+
+    <input type="number" id="age" placeholder="Age (years)" class="input"><br>
+    <input type="number" id="weight" placeholder="Weight (kg)" class="input"> <br>
+    <input type="number" id="height" placeholder="Height (cm)" class="input"><br>
+
+    <select id="gender" class="select">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+     <select id="activity" class="select">
+        <option value="1.2">Sedentary (No exercise)</option>
+        <option value="1.375">Light exercise</option>
+        <option value="1.55">Moderate exercise</option>
+        <option value="1.725">Heavy exercise</option>
+    </select>
+
+
+    <button onclick="calculateCalories()" class="btn">Calculate</button>
+    <h3 id="result"></h3>
+</div>
+
+<script>
+function calculateCalories() {
+    let age = document.getElementById("age").value;
+    let weight = document.getElementById("weight").value;
+    let height = document.getElementById("height").value;
+    let gender = document.getElementById("gender").value;
+    let activity=document.getElementById("activity").value;
+    let bmr;
+    if (gender === "male") {
+        bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+    } else if (gender === "female") {
+        bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+    } else {
+        document.getElementById("result").innerText = "Please select gender";
+        return;
+    }
+    let calories = bmr * activity;
+    document.getElementById("result").innerText =
+        "Daily Calories Needed: " + Math.round(calories);
+}
+</script>
+
+<footer class="footer">
+    <p>2026 TrackMyFit | All Rights Reserved</p>
+    <p>
+      <a href="about.html">Privacy Policy</a> |
+      <a href="terms-and-conditions.html">FAQ</a>
+    </p>
+  </footer>
+
+
+</body>
+</html>

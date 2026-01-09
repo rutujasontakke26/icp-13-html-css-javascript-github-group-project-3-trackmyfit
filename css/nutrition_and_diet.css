@@ -1,0 +1,155 @@
+.nav-bar {
+         background-color: #2563EB;
+         padding: 45px 30px;
+         position: sticky;
+         top: 0;
+         align-items: center;
+         z-index: 1000;
+        
+    }
+   .nav-bar ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 10px 20px;
+        justify-content: space-between;
+   }
+    .nav-bar a {
+       text-decoration: none;
+       color: white;
+       font-size: 18px;
+       font-weight: bold;
+       margin-right: 30px;
+      }
+
+        .nav-bar a:hover {
+         color: #FFD700;
+       }
+        .heading{
+            background-color:#E3D4B9 ;
+            height:250px;
+            width:1500px;
+            color:black;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .info{
+            padding-top: 30px;
+        }
+        .health{
+            
+            padding:15px;
+            font-size: 20px;
+        }
+        
+        .section-title{
+            background-color:#FFF2C6;
+            text-align:center;
+            height:100px;
+            font-size: 25px;
+            margin-top: 90px;
+            width:400px;
+            border-radius: 10;
+            margin-left: 550px;
+            border-radius: 10px;
+            margin-bottom: 10px; 
+        }
+
+        .card-container{
+            display: flex;
+            height:700px;
+            width:1500px;
+            border-color: black;
+            border-radius: 20px;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+            
+        }
+        .card{
+            height:250px;
+            width:350px;
+            background-color: blue;
+            margin:20px;
+            background:rgb(245, 232, 232);
+             padding: 25px;
+           
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            justify-content:space-evenly;
+            font-size: 18px;
+        }
+
+        .card:hover {
+          transform: translateY(-8px) ;
+          }
+
+          .diet{
+            background-color: blueviolet;
+            
+          }
+          .diet-plan{
+            margin-top: 20px;
+             display: flex;
+            height:350px;
+            width:1500px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+          }
+
+          .plan{
+            height:280px;
+            width:350px;
+            background-color: #FFF8DE;
+            margin: 20px;
+           border-radius: 10px;
+            padding:10px;
+
+          }
+          .plan:hover {
+           transform: translateY(-8px) ;
+     }
+     .point{
+        text-align: center;
+        margin-top: -5px;
+        font-size: 25px;
+     }
+     .card-image{
+        height:50px;
+        width:50px;
+        margin-left: 150px;
+     }
+
+     .daily{
+        padding-top: 20px;
+     }
+     .link{
+        font-size: 20px;
+        
+     }
+
+  .footer{
+    background-color: #2563EB;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 3px solid var(--rosewater);
+  }
+
+  .footer p {
+    margin: 0.5rem 0;
+    color: white;
+  }
+
+  .footer a {
+    color: white;
+    margin: 0 0.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+.footer a:hover {
+    color:#FFD700 ;
+  }
