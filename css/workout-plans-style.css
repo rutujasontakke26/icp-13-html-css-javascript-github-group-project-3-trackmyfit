@@ -1,14 +1,25 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #F9FAFB;
+    background-color: #F1F6F9;
   }
   .nav-bar {
-    background-color: #2563EB;
+    background-color: #212A3E;
     padding: 45px 30px;
-    position: relative; 
+    position: sticky; 
     top: 0;
     align-items: center;
+    height: auto;
+  }
+    nav .logo {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .web-name{
+    font-size: 25px;
+    margin: 10px;
+    margin-right: 350px;
+    color: rgb(255, 255, 255);
   }
   .nav-bar ul {
   list-style: none;
@@ -16,7 +27,7 @@
   align-items: center;
   margin: 0;
   padding: 10px 20px;
-  justify-content: space-between;
+  justify-content: space-around;
   }
 
   .nav-bar a {
@@ -25,6 +36,17 @@
     font-size: 18px;
     font-weight: bold;
     margin-right: 30px;
+  }
+  .nav-bar span{
+    color: white;
+  }
+  .nav-items{
+    margin-left: 10px;
+    margin-right: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
   }
   .nav-bar a:hover {
     color: #FFD700;
@@ -58,7 +80,7 @@
       position: absolute;
       top: 70px;
       right: 20px;
-      background-color: #2563EB;
+      background-color: #212A3E;
       flex-direction: column;
       width: 220px;
       padding: 15px;
@@ -78,7 +100,7 @@
 
       .workout-plans{
       margin-top: 50px;
-      background: #10B981;
+      background: #1447a5;
       color: white;
       text-align: center;
       padding: 10px 10px;
@@ -136,28 +158,47 @@
     }
 
   
-    .footer{
-    background-color: #2563EB;
-    padding: 32px 16px;
+    .fitness-footer {
+  background-color: #394867; 
+  color: #ffffff;
+  padding: 30px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .footer-box {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .footer-box h2,
+  .footer-box h3 {
+    color: #ffffff;
+  }
+
+  .footer-box p {
+    line-height: 1.5;
+    margin: 6px 0;
+  }
+    .footer-box ul li a {
+    text-decoration: none;   
+    color: #ffffff;            
+    cursor: default;            
+    pointer-events: none;      
+  }
+  .footer-box ul li a:hover {
+  color: #ffffff;
+  }
+
+  .footer-end {
     text-align: center;
-    margin-top: 48px;
-  }
-
-  .footer p {
-    margin:8px 0;
-    color: white;
-  }
-
-  .footer a {
-    color: white;
-    margin: 0 12.8px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-
-  .footer a:hover {
-    color:#FFD700 ;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff;
+    font-size: 14px;
   }
 
   .theme-toggle{
