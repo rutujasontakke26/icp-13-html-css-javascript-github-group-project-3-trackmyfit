@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TrackMyFit - BMI</title>
+        <link rel="stylesheet" href="../css/bmi-calculator-style.css">
     </head>
     <body>
         <div class="nav-bar">
@@ -24,14 +25,67 @@
 
 <div class="container">
     <h2>BMI Calculator</h2>
-
-    <input type="number" id="height" placeholder="Height (cm)">
-    <input type="number" id="weight" placeholder="Weight (kg)">
+        
+    Enter Your Height<input type="number" id="height" placeholder="Height (cm)"><br><br>
+      
+    Enter Your Weight<input type="number" id="weight" placeholder="Weight (kg)">
 
     <button onclick="calculateBMI()">Calculate BMI</button>
 
     <div id="result"></div>
 </div>
+<script>
+function calculateBMI(){
+    let h = document.getElementById("height").value;
+    let w = document.getElementById("weight").value;
+
+    let heightMeter = h / 100;
+    let bmi = w / (heightMeter * heightMeter);
+
+    document.getElementById("result").innerHTML =
+    "Your BMI is " + bmi.toFixed(2);
+}
+</script>
+
+  <footer class="fitness-footer">
+
+  <div class="footer-container">
+
     
+    <div class="footer-box">
+      <h2>🏋️ Track My Fit</h2>
+      <p>
+        Track My Fit helps you monitor your fitness activities,
+        calculate BMI & BMR, and stay consistent with your health goals.
+      </p>
+    </div>
+
+   
+    <div class="footer-box">
+      <h3>Useful Pages</h3>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="bmi-calculator.html">⚖️ BMI Calculator</a></li>
+        <li><a href="bmr-calculator.html">🔥 BMR Calculator</a></li>
+        <li><a href="workout-plans.html">🏃Workout Plans</a></li>
+      </ul>
+    </div>
+
+   
+    <div class="footer-box">
+      <h3>📞 Support</h3>
+      <p>📧 support@trackmyfit.com</p>
+      <p>📱 +91 98416 59456</p>
+      <p>📍 India</p>
+      
+    </div>
+
+  </div>
+
+  <div class="footer-end">
+    © 2026 TrackMyFit • Stay Fit, Stay Healthy
+  </div>
+
+</footer>
     </body>
     </html>
