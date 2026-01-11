@@ -179,26 +179,87 @@
 .select:hover {
     box-shadow: 0px 0px 2px 2px
 }
-  .footer{
-    background-color: #2563EB;
-    padding: 2rem 1rem;
-    text-align: center;
-    margin-top: 3rem;
-    border-top: 3px solid var(--rosewater);
-  }
+   .footer {
+      background-color: var(--footer-bg);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
 
-  .footer p {
-    margin: 0.5rem 0;
-    color: white;
-  }
+    }
 
-  .footer a {
-    color: white;
-    margin: 0 0.8rem;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #FFD700;
+    }
+
+
+    @media(max-width:768px) {
+      .nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .card-container,
+      .diet-plan {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .fitness-footer {
+      background-color: #394867;
+      color: #ffffff;
+      padding: 30px 20px;
+      margin-top: 30px;
+
+
+
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .footer-box {
+      width: 30%;
+      margin-bottom: 20px;
+    }
+
+    .footer-box h2,
+    .footer-box h3 {
+      color: #F2AEBB;
+    }
+
+    .footer-box p {
+      line-height: 1.5;
+      margin: 6px 0;
+    }
+
+    .footer-box ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer-box ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-end {
+      text-align: center;
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #A7AAE1;
+      font-size: 14px;
+
+    }
 .footer a:hover {
     color:#FFD700 ;
   }
