@@ -1,307 +1,359 @@
-.nav-bar {
-  background-color: #212A3E;
-  padding: 45px 30px;
-  position: sticky;
-  top: 0;
-  align-items: center;
-  height: auto;
-}
 
-nav .logo {
-  font-size: 35px;
-  font-weight: 700;
-}
+    :root {
+      --bg-color: #F1F6F9;
+      --text-color: #000;
+      --nav-bg: #212A3E;
+      --card-bg: #9BA4B5;
+      --section-bg: #E3D4B9;
+      --footer-bg: #394867;
+    }
 
-.web-name {
-  font-size: 25px;
-  margin: 10px;
-  margin-right: 350px;
-  color: rgb(255, 255, 255);
-}
+    .dark-theme {
+      --bg-color: #1B262C;
+      --text-color: #000;
+      --nav-bg: #212A3E;
+      --card-bg: #1e293b;
+      --section-bg: #334155;
+      --footer-bg: #394867;
+    }
 
-.nav-bar ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 10px 20px;
-  justify-content: space-around;
-}
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: 0.3s;
+      font-family: Arial, sans-serif;
+    }
 
-.nav-bar a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 30px;
-}
+    .nav-bar {
+      background-color: #212A3E;
+      padding: 45px 30px;
+      position: sticky;
+      top: 0;
+      align-items: center;
+      height: auto;
+    }
 
-.nav-bar span {
-  color: white;
-}
+    nav .logo {
+      font-size: 35px;
+      font-weight: 700;
+    }
 
-.nav-items {
-  margin-left: 10px;
-  margin-right: 100px;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  margin-left: 50px;
-}
+    .web-name {
+      font-size: 25px;
+      margin: 10px;
+      margin-right: 350px;
+      color: rgb(255, 255, 255);
+    }
 
-.nav-bar a:hover {
-  color: #FFD700;
-}
+    .nav-bar ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 10px 20px;
+      justify-content: space-around;
+    }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
+    .nav-bar a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 30px;
+    }
 
-.hamburger img {
-  width: 22px;
-  height: 22px;
-}
+    .nav-bar span {
+      color: white;
+    }
 
-@media (max-width: 768px) {
+    .nav-items {
+      margin-left: 10px;
+      margin-right: 100px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      margin-left: 50px;
+    }
 
-  nav {
-    position: relative;
-  }
+    .nav-bar a:hover {
+      color: #FFD700;
+    }
 
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-  }
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
 
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background-color: #212A3E;
-    flex-direction: column;
-    width: 220px;
-    padding: 15px;
-    border-radius: 10px;
-  }
+    .hamburger img {
+      width: 22px;
+      height: 22px;
+    }
 
-  .nav-links li {
-    margin: 10px 0;
-  }
+    @media (max-width: 768px) {
 
-  .nav-links a {
-    color: white;
-    font-size: 16px;
-  }
+      nav {
+        position: relative;
+      }
 
-  nav:hover .nav-links {
-    display: flex;
-  }
-}
+      .hamburger {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+      }
 
-.heading {
-  background-color: #E3D4B9;
-  height: 250px;
-  width: 1500px;
-  color: black;
-  text-align: center;
-  margin: 10px;
-}
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #212A3E;
+        flex-direction: column;
+        width: 220px;
+        padding: 15px;
+        border-radius: 10px;
+      }
 
+      .nav-links li {
+        margin: 10px 0;
+      }
 
-@media screen and (max-width: 768px) {
+      .nav-links a {
+        color: white;
+        font-size: 16px;
+      }
 
+      nav:hover .nav-links {
+        display: flex;
+      }
+    }
 
+    .toggle-btn {
+      background: #FFD700;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
 
+    .heading {
 
-  .heading {
-    width: 100%;
+      text-align: center;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #9BA4B5;
+    }
 
-  }
-}
+    .section-title {
 
-.info {
-  padding-top: 30px;
-}
-
-.health {
-
-  padding: 15px;
-  font-size: 20px;
-}
-
-.section-title {
-  background-color: #FFF2C6;
-  text-align: center;
-  height: 100px;
-  font-size: 25px;
-  margin-top: 90px;
-  width: 400px;
-  border-radius: 10;
-  margin-left: 550px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .section-title {
-    margin-left: -1px;
-    margin-top: -8px;
-
-  }
-}
-
-.card-container {
-  display: flex;
-  height: 700px;
-  width: 1500px;
-  border-color: black;
-  border-radius: 20px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-
-}
+      width: 400px;
+      margin: 60px auto 20px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #9BA4B5;
+    }
 
 
-@media screen and (max-width: 768px) {
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #2563EB;
-    margin-top: 40px;
+    .card-container,
+    .diet-plan {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      max-width: 1500px;
+      margin: auto;
+      flex-direction: row;
+
+      height: 1000px;
+    }
+
+    .diet-plan {
 
 
-  }
-}
-
-.card {
-  height: 250px;
-  width: 350px;
-  background-color: blue;
-  margin: 20px;
-  background: rgb(245, 232, 232);
-  padding: 25px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  justify-content: space-evenly;
-  font-size: 18px;
-}
-
-@media screen and (max-width: 768px) {
-  .card {
-    flex-direction: column;
-    display: flex;
-  }
-}
+      height: 450px;
+    }
 
 
-.card:hover {
-  transform: translateY(-8px);
-}
+    .card,
+    .plan {
 
-.diet {
-  background-color: blueviolet;
+      width: 350px;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+      background-color: #fff;
 
-}
 
-.diet-plan {
-  margin-top: 20px;
-  display: flex;
-  height: 350px;
-  width: 1500px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+    }
 
-}
+    .plan {
+      height: 350px;
+    }
 
-@media screen and (max-width: 768px) {
-  .diet-plan {
-    display: flex;
-    flex-direction: column;
-  }
-}
+    .card:hover,
+    .plan:hover {
+      transform: translateY(-8px);
+    }
 
-.plan {
-  height: 280px;
-  width: 350px;
-  background-color: #FFF8DE;
-  margin: 20px;
+    .card-image {
+      display: block;
+      margin: 0 auto;
+      height: 200px;
+      width: 350px;
+    }
 
-  padding: 10px;
+    .diet-image {
+      height: 100px;
+      width: 150px;
+      display: block;
+      margin: 0 auto;
+    }
 
-}
+    .card-container {
+      display: flex;
+      flex-direction: row;
 
-.plan:hover {
-  transform: translateY(-8px);
-}
+    }
 
-.point {
-  text-align: center;
-  margin-top: -5px;
-  font-size: 25px;
-}
+    .link {
+      font-size: 20px;
+    }
 
-.card-image {
-  height: 50px;
-  width: 50px;
-  margin-left: 150px;
-}
 
-.daily {
-  padding-top: 20px;
-}
 
-.link {
-  font-size: 20px;
+    @media screen and (max-width: 768px) {
+      .card-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #2563EB;
+        margin-top: 40px;
 
-}
 
-.fitness-footer {
-  background-color: #394867; 
-  color: #ffffff;
-  padding: 30px 20px;
-}
+      }
+    }
 
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+    .card {
+      height: 420px;
+      width: 350px;
+      background-color: blue;
+      margin: 20px;
+      background: #fff;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      justify-content: space-evenly;
+      font-size: 18px;
+      border-radius: 5px;
+    }
 
-.footer-box {
-  width: 30%;
-  margin-bottom: 20px;
-}
+    @media screen and (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        display: flex;
+      }
+    }
 
-.footer-box h2,
-.footer-box h3 {
-  color: #F2AEBB;
-}
 
-.footer-box p {
-  line-height: 1.5;
-  margin: 6px 0;
-}
+    .card:hover {
+      transform: translateY(-8px);
+    }
 
-.footer-box ul {
-  list-style-type: none;
-  padding: 0;
-}
+    .point {
+      text-align: center;
+      margin-top: 10px;
+    }
 
-.footer-box ul li {
-  margin-bottom: 8px;
-}
+    .content {
+      font-size: 18px;
 
-.footer-end {
-  text-align: center;
-  margin-top: 15px;
-  padding-top: 10px;
-  border-top: 1px solid #A7AAE1;
-  font-size: 14px;
-}
+    }
+
+    .footer {
+      background-color: var(--footer-bg);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #FFD700;
+    }
+
+
+    @media(max-width:768px) {
+      .nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .card-container,
+      .diet-plan {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .fitness-footer {
+      background-color: #394867;
+      color: #ffffff;
+      padding: 30px 20px;
+      margin-top: 30px;
+
+
+
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .footer-box {
+      width: 30%;
+      margin-bottom: 20px;
+    }
+
+    .footer-box h2,
+    .footer-box h3 {
+      color: #F2AEBB;
+    }
+
+    .footer-box p {
+      line-height: 1.5;
+      margin: 6px 0;
+    }
+
+    .footer-box ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer-box ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-end {
+      text-align: center;
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #A7AAE1;
+      font-size: 14px;
+
+    }
