@@ -229,21 +229,11 @@
 
 
 
-    @media screen and (max-width: 768px) {
-      .card-container {
-        display: flex;
-        flex-direction: column;
-        background-color: #2563EB;
-        margin-top: 40px;
-
-
-      }
-    }
 
     .card {
       height: 420px;
       width: 350px;
-      background-color: blue;
+  
       margin: 20px;
       background: #fff;
       padding: 25px;
@@ -254,12 +244,7 @@
       border-radius: 5px;
     }
 
-    @media screen and (max-width: 768px) {
-      .card {
-        flex-direction: column;
-        display: flex;
-      }
-    }
+   
 
 
     .card:hover {
@@ -356,4 +341,30 @@
       border-top: 1px solid #A7AAE1;
       font-size: 14px;
 
+    }
+    @media (max-width: 768px) {
+    .card-container,
+  .diet-plan {
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+  }
+
+  
+  .card,
+  .plan {
+    width: 90%;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .diet-image {
+    width: 120px;
+    height: auto;
+  }
     }
