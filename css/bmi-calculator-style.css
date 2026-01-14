@@ -4,11 +4,22 @@
     background-color: #F1F6F9;
   }
   .nav-bar {
-    background-color:#212A3E;
+    background-color: #212A3E;
     padding: 45px 30px;
-    position: relative; 
+    position: sticky; 
     top: 0;
     align-items: center;
+    height: auto;
+  }
+    nav .logo {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .web-name{
+    font-size: 25px;
+    margin: 10px;
+    margin-right: 350px;
+    color: rgb(255, 255, 255);
   }
   .nav-bar ul {
   list-style: none;
@@ -16,7 +27,7 @@
   align-items: center;
   margin: 0;
   padding: 10px 20px;
-  justify-content: space-between;
+  justify-content: space-around;
   }
 
   .nav-bar a {
@@ -26,14 +37,20 @@
     font-weight: bold;
     margin-right: 30px;
   }
+  .nav-bar span{
+    color: white;
+  }
+  .nav-items{
+    margin-left: 10px;
+    margin-right: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+  }
   .nav-bar a:hover {
     color: #FFD700;
   }
-  .hamburger {
-  display: none;
-  cursor: pointer;
-  }
-
   .hamburger {
   display: none;
   cursor: pointer;
@@ -63,7 +80,7 @@
       position: absolute;
       top: 70px;
       right: 20px;
-      background-color: #2563EB;
+      background-color: #212A3E;
       flex-direction: column;
       width: 220px;
       padding: 15px;
@@ -80,6 +97,7 @@
       display: flex;
       }
     }
+    
     .container{
     max-width: 350px;
     background-color: #b1bdd6;
@@ -186,6 +204,6 @@ button:hover{
 
 .fitness-footer a:hover {
   color: #FFD700 
-  text-decoration:underline;
-
+  text-decoration: underline;
+  
 }
