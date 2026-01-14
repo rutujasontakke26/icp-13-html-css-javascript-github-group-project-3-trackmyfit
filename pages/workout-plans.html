@@ -25,6 +25,9 @@
     <div class="hamburger">
       <img src="../images/hamburger.png" alt="menu">
     </div>
+    <button id="themeBtn" class="theme-toggle" onclick="toggleTheme()">
+    🌙 Dark
+  </button>
   </nav>
 
     </div>
@@ -67,7 +70,57 @@
         Upright Rows (EZ/DB): 3×10–12
      </p>
     </div>
-
+    <div class="card">
+      <img src="../images/abs-workout.png" alt="">
+      <h2>Abs Workout</h2>
+      <p>
+        Crunches – slow & controlled<br>
+        Leg Raises – keep lower back pressed down<br>
+        Bicycle Crunch – twist, don’t rush<br>
+        Plank – squeeze core + glutes<br>
+        Mountain Climbers – fast but tight core
+     </p>
+    </div>
+    <div class="card">
+      <img src="../images/triceps-workout.png" alt="">
+      <h2>Triceps Workout</h2>
+      <p>
+        Bench/Chair Dips – elbows straight back<br>
+        Close-Grip Push-ups – hands close, core tight<br>
+        Diamond Push-ups (knees down if needed)<br>
+        Triceps Kickbacks (water bottles if you want)<br>
+     </p>
+    </div>
+    <div class="card">
+      <img src="../images/back-workout.png" alt="">
+      <h2>Back Workout</h2>
+      <p>
+        Lat Pulldown – pull to chest, squeeze lats<br>
+        Seated Cable Row – chest up, elbows back<br>
+        Dumbbell Bent-Over Row – slow & controlled<br>
+        Face Pulls – rear delts + upper back<br>
+     </p>
+    </div>
+    <div class="card">
+      <img src="../images/bicep-workout.png" alt="">
+      <h2>Bicep Workout</h2>
+      <p>
+        Barbell Curl<br>
+        Concentration Curl (peak focus)<br>
+        Preacher Curl Machine<br>
+        eated Bicep Curl Machine<br>
+     </p>
+    </div>
+    <div class="card">
+      <img src="../images/forearm-workout.png" alt="">
+      <h2>Forearm Workout</h2>
+      <p>
+        Wrist Curls (barbell or DB)<br>
+        Reverse Wrist Curls<br>
+        Hammer Curls<br>
+        Reverse Barbell Curl<br>
+     </p>
+    </div>
     </div>
     <footer class="fitness-footer">
 
@@ -86,12 +139,11 @@
     <div class="footer-box">
       <h3>Useful Pages</h3>
       <ul>
-      <li><a href="../index.html">🏠 Home</a></li>
-      <li><a href="bmi-calculator.html">⚖️ BMI Calculator</a></li>
-      <li><a href="bmr-calculator.html">🔥 BMR Calculator</a></li>
-      <li><a href="workout-plans.html">🏃 Workout Plans</a></li>
-    </ul>
-
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="bmi-calculator.html">⚖️ BMI Calculator</a></li>
+        <li><a href="bmr-calculator.html">🔥 BMR Calculator</a></li>
+        <li><a href="workout-plans.html">🏃Workout Plans</a></li>
+      </ul>
     </div>
 
    
@@ -109,9 +161,19 @@
     © 2026 TrackMyFit • Stay Fit, Stay Healthy
   </div>
 
-  </footer>
+</footer>
   <script>
-    
+    function toggleTheme() {
+    document.body.classList.toggle("dark");
+
+    var btn = document.getElementById("themeBtn");
+
+    if (document.body.classList.contains("dark")) {
+      btn.innerHTML = "☀️ Light";
+    } else {
+      btn.innerHTML = "🌙 Dark";
+    }
+  }
   </script>
 </body>
 </html>

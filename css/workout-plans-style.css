@@ -108,9 +108,9 @@
       box-shadow: 0 4px 15px #0000001a;
       }
       .card-container {
-      max-width: 1100px;
+      max-width: 1300px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 10px;
 
       display: flex;         
       gap: 30px;
@@ -158,10 +158,10 @@
     }
 
   
-    .fitness-footer {
-  background-color: #394867; 
-  color: #ffffff;
-  padding: 30px 20px;
+      .fitness-footer {
+    background-color: #394867; 
+    color: #ffffff;
+    padding: 30px 20px;
   }
 
   .footer-container {
@@ -174,6 +174,7 @@
     width: 30%;
     margin-bottom: 20px;
   }
+
   .footer-box h2,
   .footer-box h3 {
     color: #ffffff;
@@ -183,22 +184,33 @@
     line-height: 1.5;
     margin: 6px 0;
   }
-    .footer-box ul li a {
-    text-decoration: none;   
-    color: #ffffff;            
-    cursor: default;            
-    pointer-events: none;      
+
+  .footer-box ul {
+    list-style-type: none;
+    padding: 0;
   }
-  .footer-box ul li a:hover {
-  color: #ffffff;
+
+  .footer-box ul li {
+    margin-bottom: 8px;
   }
 
   .footer-end {
     text-align: center;
     margin-top: 15px;
     padding-top: 10px;
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid #A7AAE1;
     font-size: 14px;
+  }
+    .fitness-footer a,
+  .fitness-footer a:visited {
+    color: #F1F6F9 !important;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .fitness-footer a:hover {
+    color: #FFD700 !important;
+    text-decoration: underline;
   }
 
   .theme-toggle{
@@ -223,4 +235,33 @@
   .ico-dark{
   visibility: hidden;
   }
+  body.dark {
+    background-color: #1B262C;
+    color: #ffffff;
+  }
+  body.dark .nav-bar {
+    background-color: #212A3E;
+  }
+  body.dark .card {
+    background-color: #9BA4B5;
+    color: #1B262C;
+  }
+  body.dark .card h2 {
+    color: #1B262C;
+  }
+  body.dark .card p {
+    color: #1B262C;
+  }
+  body.dark .workout-plans {
+    background-color: #212A3E;
+    color: #ffffff;
+  }
+  body.dark .fitness-footer {
+    background-color: #394867;
+    color: #ffffff;
+  }
+  body.dark .fitness-footer a {
+    color: #F1F6F9 !important;
+  }
+
 
