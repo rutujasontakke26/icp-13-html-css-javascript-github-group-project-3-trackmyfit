@@ -100,7 +100,7 @@ body {
         .container{
             max-width: 800px;
             margin: 40px auto;
-            background-color: #b1bdd6;
+            background-color: white;
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 8px 15px rgba(0,0,0,0.1);
@@ -173,3 +173,15 @@ body {
   font-size: 14px;
 }
  
+ .fitness-footer a,
+.fitness-footer a:visited {
+  color: #F1F6F9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.fitness-footer a:hover {
+  color: #FFD700 
+  text-decoration: underline;
+  
+}
