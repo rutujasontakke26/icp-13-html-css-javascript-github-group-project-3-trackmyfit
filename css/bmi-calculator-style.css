@@ -34,6 +34,11 @@
   cursor: pointer;
   }
 
+  .hamburger {
+  display: none;
+  cursor: pointer;
+  }
+
   .hamburger img {
     width: 22px;
     height: 22px;
@@ -172,4 +177,15 @@ button:hover{
   border-top: 1px solid #A7AAE1;
   font-size: 14px;
 }
- 
+ .fitness-footer a,
+.fitness-footer a:visited {
+  color: #F1F6F9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.fitness-footer a:hover {
+  color: #FFD700 
+  text-decoration:underline;
+
+}
