@@ -123,16 +123,18 @@
 .footer-box {
   width: 30%;
   margin-bottom: 20px;
+  
 }
 
 .footer-box h2,
 .footer-box h3 {
-  color: #F2AEBB;
+  color: #9BA4B5;
 }
 
 .footer-box p {
   line-height: 1.5;
   margin: 6px 0;
+  color: white;
 }
 
 .footer-box ul {
