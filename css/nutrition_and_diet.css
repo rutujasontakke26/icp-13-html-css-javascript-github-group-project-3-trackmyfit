@@ -340,8 +340,10 @@
       padding-top: 10px;
       border-top: 1px solid #A7AAE1;
       font-size: 14px;
-
     }
+    .footer-box ul li a{
+     color:white;
+}
     @media (max-width: 768px) {
     .card-container,
   .diet-plan {

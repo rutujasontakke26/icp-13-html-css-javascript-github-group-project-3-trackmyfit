@@ -290,6 +290,7 @@
 
 .footer-box ul li {
   margin-bottom: 8px;
+ 
 }
 
 .footer-end {
@@ -298,4 +299,7 @@
   padding-top: 10px;
   border-top: 1px solid #A7AAE1;
   font-size: 14px;
+}
+.footer-box ul li a{
+  color:white;
 }
