@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="../css/workout-to-do-list-style.css">
+  <meta charset="UTF-8">
+  <title>Workout To-Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/workout-to-do-list-style.css">
 </head>
+
 <body>
-    <div class="nav-bar">
-  <nav class="navbar">
+  <nav class="nav-bar">
     <ul class="nav-links">
       <div class="logo"> <img src="../images/logo.png" height="40px"></div>
       <span class="brand-name"><b>TrackMyFit</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -29,45 +29,21 @@
     🌙 Dark
   </button>
   </nav>
-  <footer class="fitness-footer">
 
-  <div class="footer-container">
+<div class="banner">
+  <h1>Workout To-Do List</h1>
+  <p>Glow-up tasks, one check at a time ✨</p>
+</div>
 
-    
-    <div class="footer-box">
-      <h2>🏋️ Track My Fit</h2>
-      <p>
-        Track My Fit helps you monitor your fitness activities,
-        calculate BMI & BMR, and stay consistent with your health goals.
-      </p>
-    </div>
+<div class="todo-section">
+  <div id="todo-items-container"></div>
+</div>
 
-   
-    <div class="footer-box">
-      <h3>Useful Pages</h3>
-      <ul>
-        <li><a href="index.html">🏠 Home</a></li>
-        <li><a href="bmi-calculator.html">⚖️ BMI Calculator</a></li>
-        <li><a href="bmr-calculator.html">🔥 BMR Calculator</a></li>
-        <li><a href="workout-plans.html">🏃Workout Plans</a></li>
-      </ul>
-    </div>
+<div class="todo-add-container">
+  <input type="text" id="todo-input" placeholder="Add a new task…">
+  <button id="add-button">＋</button>
+</div>
 
-   
-    <div class="footer-box">
-      <h3>📞 Support</h3>
-      <p>📧 support@trackmyfit.com</p>
-      <p>📱 +91 98416 59456</p>
-      <p>📍 India</p>
-      
-    </div>
-
-  </div>
-
-  <div class="footer-end">
-    © 2026 TrackMyFit • Stay Fit, Stay Healthy
-  </div>
-
-</footer>
+<script src="../js/workout-to-do-list.js"></script>
 </body>
 </html>
