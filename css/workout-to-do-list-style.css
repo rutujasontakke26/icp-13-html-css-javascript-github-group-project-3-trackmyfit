@@ -140,25 +140,22 @@ body {
   }
 
   .todo-add-container {
-    margin-top: 20px;
-    position: fixed;
-    bottom: auto;
-    width: 100%;
+    margin-top: 40px;
     background: #1447a5;
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    max-width: 1300px;
-    padding: 20px 320px;
     align-items: center;
-    bottom: 0%;
+    gap: 12px;
+    padding: 20px;
+    width: 100%;
   }
 
   #todo-input {
-    width: 60%;
-    padding: 10px;
+    flex: 1;
+    padding: 12px 16px;
     border-radius: 6px;
     border: none;
+    font-size: 16px;
+    width: 10%;
   }
 
   #add-button {
@@ -178,6 +175,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    bottom: 0%;
   }
 
   .footer-box {
