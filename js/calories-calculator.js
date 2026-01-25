@@ -36,9 +36,20 @@
       btn.innerHTML = "🌙 Dark";
     }
 }
- function setDarkTheme() {
+    function toggleTheme() {
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme === "dark") {
+            setLightTheme();
+            localStorage.setItem("theme", "light");
+        } else {
+            setDarkTheme();
+            localStorage.setItem("theme", "dark");
+        }
+    }
+    function setDarkTheme() {
         document.body.style.backgroundColor = "#1B262C";
-        document.body.style.color = "#ffffff";
+        document.body.style.color ="#000"
 
         navbar.style.backgroundColor = "#212A3E";
         footer.style.backgroundColor = "#394867";
@@ -72,6 +83,4 @@
         const savedTheme = localStorage.getItem("theme") || "light";
         savedTheme === "dark" ? setDarkTheme() : setLightTheme();
     }
-
     renderTheme();
-
