@@ -48,3 +48,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
     displaytodoItems();
 });
+
+    const themeToggle = document.getElementById("theme-toggle");
+    const icoLight = document.getElementById("ico-light");
+    const icoDark = document.getElementById("ico-dark");
+
+    const navbar = document.getElementById("navbar");
+    const footer = document.getElementById("footer");
+    const containers = document.querySelectorAll(".container");
+
+    function toggleTheme() {
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme === "dark") {
+            setLightTheme();
+            localStorage.setItem("theme", "light");
+        } else {
+            setDarkTheme();
+            localStorage.setItem("theme", "dark");
+        }
+    }
+
+    function setDarkTheme() {
+        document.body.style.backgroundColor = "#1B262C";
+        document.body.style.color = "#ffffff";
+
+        navbar.style.backgroundColor = "#212A3E";
+        footer.style.backgroundColor = "#394867";
+
+        containers.forEach(c => {
+            c.style.backgroundColor = "#9BA4B5";
+            c.style.color = "#000";
+        });
+
+        icoLight.style.display = "none";
+        icoDark.style.display = "block";
+    }
+
+    function setLightTheme() {
+        document.body.style.backgroundColor = "#F1F6F9";
+        document.body.style.color = "#000";
+
+        navbar.style.backgroundColor = "#212A3E";
+        footer.style.backgroundColor = "#394867";
+
+        containers.forEach(c => {
+            c.style.backgroundColor = "#9BA4B5";
+            c.style.color = "#000";
+        });
+
+        icoLight.style.display = "block";
+        icoDark.style.display = "none";
+    }
+
+    function renderTheme() {
+        const savedTheme = localStorage.getItem("theme") || "light";
+        savedTheme === "dark" ? setDarkTheme() : setLightTheme();
+    }
+
+    renderTheme();
+
