@@ -44,18 +44,9 @@
 
     <div id="result"></div>
 </div>
-<script>
-function calculateBMI(){
-    let h = document.getElementById("height").value;
-    let w = document.getElementById("weight").value;
 
-    let heightMeter = h / 100;
-    let bmi = w / (heightMeter * heightMeter);
+<script src="../js/bmi-calculator.js"></script>
 
-    document.getElementById("result").innerHTML =
-    "Your BMI is " + bmi.toFixed(2);
-}
-</script>
 
   <footer class="fitness-footer">
 
