@@ -1,31 +1,4 @@
-
-        function calculateCalories() {
-            let age = document.getElementById("age").value;
-            let gender = document.getElementById("gender").value;
-            let height = document.getElementById("height").value;
-            let weight = document.getElementById("weight").value;
-            let activity = document.getElementById("activity").value;
-
-            if (age === "" || height === "" || weight === "") {
-                document.getElementById("result").innerText = "Please fill all fields!";
-                return;
-            }
-
-            let bmr;
-
-            if (gender === "male") {
-                bmr = 10 * weight + 6.25 * height - 5 * age + 5;
-            } else {
-                bmr = 10 * weight + 6.25 * height - 5 * age - 161;
-            }
-
-            let calories = Math.round(bmr * activity);
-
-            document.getElementById("result").innerText =
-                "Daily Calories Needed: " + calories + " kcal";
-        }
-
-        function toggleTheme() {
+function toggleTheme() {
     document.body.classList.toggle("dark");
 
     var btn = document.getElementById("themeBtn");
@@ -36,9 +9,20 @@
       btn.innerHTML = "🌙 Dark";
     }
 }
- function setDarkTheme() {
+    function toggleTheme() {
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme === "dark") {
+            setLightTheme();
+            localStorage.setItem("theme", "light");
+        } else {
+            setDarkTheme();
+            localStorage.setItem("theme", "dark");
+        }
+    }
+    function setDarkTheme() {
         document.body.style.backgroundColor = "#1B262C";
-        document.body.style.color = "#ffffff";
+        document.body.style.color ="#000"
 
         navbar.style.backgroundColor = "#212A3E";
         footer.style.backgroundColor = "#394867";
@@ -72,6 +56,4 @@
         const savedTheme = localStorage.getItem("theme") || "light";
         savedTheme === "dark" ? setDarkTheme() : setLightTheme();
     }
-
     renderTheme();
-
