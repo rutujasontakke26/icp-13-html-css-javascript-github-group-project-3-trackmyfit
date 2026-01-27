@@ -8,36 +8,43 @@
         body {
     margin: 0;
     padding: 0;
-    background-color: #F1F6F9;
-  }
-  .nav-bar {
-    background-color: #212A3E;
+    background-color: #ffffff;
+}
+
+.nav-bar {
+  background-color: #212A3E;
     padding: 45px 30px;
     position: sticky; 
     top: 0;
     align-items: center;
     height: auto;
-  }
-    nav .logo {
+}
+.nav-logo {
     font-size: 35px;
     font-weight: 700;
   }
-  .web-name{
-    font-size: 25px;
-    margin: 10px;
-    margin-right: 350px;
-    color: rgb(255, 255, 255);
-  }
-  .nav-bar ul {
+
+.nav-bar ul {
   list-style: none;
   display: flex;
   align-items: center;
   margin: 0;
   padding: 10px 20px;
   justify-content: space-around;
+}
+.web-name{
+    font-size: 25px;
+    margin: 10px;
+    margin-right: 350px;
+    color: rgb(255, 255, 255);
   }
 
-  .nav-bar a {
+.brand-name {
+  color: white;
+  font-size: 22px;
+  margin-right: 40px;
+}
+.nav-bar a {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -47,18 +54,20 @@
   .nav-bar span{
     color: white;
   }
-  .nav-items{
-    margin-left: 10px;
+
+.nav-items {
+   margin-left: 10px;
     margin-right: 100px;
     text-decoration: none;
     color: white;
     font-size: 20px;
     margin-left: 50px;
-  }
-  .nav-bar a:hover {
-    color: #FFD700;
-  }
-  .hamburger {
+}
+
+.nav-items:hover {
+  color: #FFD700;
+}
+ .hamburger {
   display: none;
   cursor: pointer;
   }
@@ -104,91 +113,118 @@
       display: flex;
       }
     }
-    .fitness-footer {
-    background-color: #394867; 
-    color: #ffffff;
-    padding: 30px 20px;
-  }
 
-  .footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .footer-box {
-    width: 30%;
-    margin-bottom: 20px;
-  }
-
-  .footer-box h2,
-  .footer-box h3 {
-    color: #ffffff;
-  }
-
-  .footer-box p {
-    line-height: 1.5;
-    margin: 6px 0;
-  }
-
-  .footer-box ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .footer-box ul li {
-    margin-bottom: 8px;
-  }
-
-  .footer-end {
-    text-align: center;
-    margin-top: 15px;
-    padding-top: 10px;
-    border-top: 1px solid #A7AAE1;
-    font-size: 14px;
-  }
-    .fitness-footer a,
-  .fitness-footer a:visited {
-    color: #F1F6F9 !important;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .fitness-footer a:hover {
-    color: #FFD700 !important;
-    text-decoration: underline;
-  }
-  .hero {
-  padding: 60px 20px;
+.hero {
+  background-color: #9BA4B5;
   text-align: center;
+  padding: 60px 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
-.hero h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
+.hero h1 {
+  margin: 0;
+  font-size: 36px;
+  color:#1B262C;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 40px;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-.card {
-  background: var(--container);
-  padding: 30px;
-  text-align: center;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background-color: #9BA4B5;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.feature-card:hover {
+  transform: translateY(-6px);
 }
-    </style>
+
+.feature-card img {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin: 10px 0;
+}
+
+.why-choose {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #9BA4B5;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.fitness-footer {
+  background-color: #394867;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  width: 30%;
+  min-width: 250px;
+}
+
+.footer-box h2,
+.footer-box h3 {
+  color: white;
+}
+
+.footer-box a {
+  color: #F1F6F9;
+  text-decoration: none;
+}
+
+.footer-box a:hover {
+  color: #FFD700;
+}
+
+.footer-end {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #9BA4B5;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .footer-box {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
 </head>
 <body>
     <div class="nav-bar">
