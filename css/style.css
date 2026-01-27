@@ -140,7 +140,7 @@ body {
 }
 
 .feature-card {
-  background-color: #9BA4B5;
+  background-color: #c2c7ce;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -153,7 +153,10 @@ body {
 
 .feature-card img {
   height: 60px;
-  margin-bottom: 10px
+  width: 300px;         
+  height: 140px;         
+  object-fit: cover;        
+  margin-bottom: 15px;
 }
 
 .feature-card h3 {
@@ -163,7 +166,7 @@ body {
 .why-choose {
   max-width: 900px;
   margin: 10px auto;
-  background-color: #9BA4B5;
+  background-color: #c2c7ce;
   padding: 30px;
   border-radius: 15px;
   text-align: center;
