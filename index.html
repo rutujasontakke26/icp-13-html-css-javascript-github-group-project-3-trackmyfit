@@ -158,6 +158,36 @@
     color: #FFD700 !important;
     text-decoration: underline;
   }
+  .hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: var(--container);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
     </style>
 </head>
 <body>
@@ -183,6 +213,21 @@
     🌙 Dark
   </button>
   </nav>
+
+  <section class="hero">
+    <h1>Welcome to TrackMyFit</h1>
+    <p>All-in-one fitness tracking platform — workouts, calories, BMI, BMR & nutrition.</p>
+  </section>
+
+  <section class="features">
+    <div class="card">BMI Calculator</div>
+    <div class="card">BMR Calculator</div>
+    <div class="card">Workout Plans</div>
+    <div class="card">Workout To-Do List</div>
+    <div class="card">Calorie Calculator</div>
+    <div class="card">Nutrition Diet Plan</div>
+  </section>
+
   <footer class="fitness-footer">
 
   <div class="footer-container">
@@ -223,3 +268,4 @@
   </div>
 
 </footer>
+<script></script>
