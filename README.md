@@ -2,7 +2,7 @@
 
 **TrackMyFit** is a simple and user-friendly fitness website designed to help users track their health, workouts, and nutrition. All in one place.  
 
- 💻 **Live Website** - https://trackmyfit26.netlify.app/
+ 💻 Live Website- https://trackmyfit26.netlify.app/
 ---
 
 ## 🚀 Features
