@@ -84,6 +84,6 @@
 ## Contributors:
 Thanks goes to these wonderful people 💖
 
-<!-- ALL-CONTRIBUTORS-LIST:START -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
+<a href="https://github.com/icp13-html-css-javascript-github-group-project-3-trackmyfit/undefined/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=icp13-html-css-javascript-github-group-project-3-trackmyfit/undefined" />
+</a>
